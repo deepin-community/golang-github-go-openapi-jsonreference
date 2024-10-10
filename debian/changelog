@@ -1,5 +1,70 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-go-openapi-jsonreference (1:0.21.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
+  * Update debian/watch file.
+  * Wrap and sort -ast.
+  * Switch to Standards-Version 4.7.0 (no changes needed).
+  * Add myself to Uploaders.
+  * Update copyright years.
+  * Remove golang-go dependency from -dev package.
+  * Switch golang-go Build-Depends to golang-any.
+  * Drop now unused golang-github-puerkitobio-purell-dev from dependencies.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Guillem Jover <gjover@sipwise.com>  Tue, 17 Sep 2024 20:10:50 +0200
+
+golang-github-go-openapi-jsonreference (1:0.19.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add field Testsuite: autopkgtest-pkg-go.
+  * Add Repository and Repository-Browse upstream metadata fields.
+  * Update gitlab-ci.yml from its new refactored template.
+
+ -- Guillem Jover <gjover@sipwise.com>  Tue, 30 Nov 2021 15:34:17 +0100
+
+golang-github-go-openapi-jsonreference (1:0.19.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+  [ Guillem Jover ]
+  * New upstream release.
+  * Update Go Team Maintainer address.
+  * Use dh-sequence-golang instead of dh-golang and --with=golang.
+  * Wrap and sort -at.
+  * Remove ${shlibs:Depends} from -dev Depends.
+  * Switch to debhelper-compat level 13.
+  * Switch to Standards-Version 4.6.0 (no changes needed).
+  * Switch Section to golang.
+  * Mark -dev packages as Multi-Arch: foreign.
+  * Do not capitalize first word in package synopsis.
+  * Move license location on the system into a Comment field.
+  * Update gitlab-ci.yml from its canonical source.
+  * Add a debian/watch file.
+  * Update gbp configuration following Go Team new workflow.
+  * Set build directory to _build.
+  * Add .gitignore files.
+  * Update copyright claims.
+  * Set Rules-Requires-Root to no.
+
+ -- Guillem Jover <gjover@sipwise.com>  Wed, 24 Nov 2021 20:29:26 +0100
+
+golang-github-go-openapi-jsonreference (1:0.0~git20160704.0.13c6e35-1) unstable; urgency=medium
+
+  * Package earlier upstream snapshot as B-D for k8s.
+
+ -- Tim Potter <tpot@hpe.com>  Wed, 22 Feb 2017 08:39:24 +1100
+
+golang-github-go-openapi-jsonreference (0.0~git20161105.0.36d33bf-1) unstable; urgency=medium
+
+  * Initial release (Closes: #853814)
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 29 Nov 2016 14:59:01 +1100
